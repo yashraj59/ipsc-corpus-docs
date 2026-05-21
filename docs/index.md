@@ -31,6 +31,20 @@ PASS datasets, 38 biological PASS datasets, 17 biological QUARANTINE datasets,
 208,651 classifier-eligible cells, 5 classifier labels, and zero open
 high-severity failures.
 
+## Citation And License
+
+If you use iPSC Corpus Kit, please cite:
+
+```text
+Yash Raj. (2026). iPSC Corpus Kit (Version 0.3.0) [Computer software].
+GitHub. https://github.com/yashraj59/ipsc-corpus-kit
+```
+
+iPSC Corpus Kit documentation is released under the MIT License. If you use
+generated corpus artifacts, also cite the original source datasets and
+publications recorded in the registry and run manifests. See
+{doc}`citation_and_license` for the full citation and license notes.
+
 ```{toctree}
 :maxdepth: 2
 :caption: User Guide
