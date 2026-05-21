@@ -23,13 +23,20 @@ classifier-ready artifacts from reproducible evidence.
 :alt: Agentic iterative corpus factory overview
 ```
 
+## Method
+
+iPSC Corpus Kit is the first case study of an
+{doc}`Agentic Research Corpus Factory <agentic_research_corpus_factory>`: a
+human-supervised agentic workflow for discovering, auditing, harmonizing,
+validating, improving, and promoting scientific corpora with explicit scorecard
+gates.
+
 ## Current Public Corpus
 
-The refreshed cached best run (2026-05-21) produced 55 supported public
-datasets, 19 audited skipped rows, 6,191,582 harmonized cells, 55/55 technical
-PASS datasets, 38 biological PASS datasets, 17 biological QUARANTINE datasets,
-208,651 classifier-eligible cells, 5 classifier labels, and zero open
-high-severity failures.
+The promoted public run (`iter_014`, 2026-05-20) produced 55 supported public
+datasets, 19 audited skipped rows, 6,191,582 harmonized cells, 100% technical,
+obs-schema, and var-name validation pass rates, 418,420 classifier-eligible
+cells across 11 labels, and zero open high-severity failures.
 
 ## Citation And License
 
@@ -63,6 +70,7 @@ troubleshooting
 :caption: Corpus Factory Method
 
 corpus_factory
+agentic_research_corpus_factory
 custom_corpus_playbook
 agentic_prompts
 prompts/codex

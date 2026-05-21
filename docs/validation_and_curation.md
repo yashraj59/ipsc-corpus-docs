@@ -102,12 +102,10 @@ profiles, weak unknown-heavy annotation, unsupported embryo-like labels,
 stress-dominant identity, reversed timecourses, or high-confidence reference and
 marker disagreement.
 
-In the refreshed 2026-05-21 cached best run, all 55 supported datasets passed
-technical validation. After Petropoulos/Lanner stage-label preservation,
-biological validation produced 37 PASS datasets and 18 QUARANTINE datasets,
-including development-stage grouped quarantine evidence. Quarantined datasets
-and groups remain auditable but are excluded from classifier artifacts by
-default.
+In the promoted `iter_014` run, all 55 supported datasets passed technical
+validation. Biological validation was conservative: 47 datasets passed and 8
+were quarantined with explicit evidence. Quarantined datasets and groups remain
+auditable but are excluded from classifier artifacts by default.
 
 ## Curation Learning
 

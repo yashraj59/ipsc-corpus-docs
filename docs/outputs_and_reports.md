@@ -58,9 +58,7 @@ quarantine decisions.
 `development_stage_harmonized` appears as a report axis in
 `marker_module_summary.csv`, `reference_projection_summary.csv`,
 `timecourse_consistency_audit.csv`, clustering reports, `quarantine_manifest.csv`,
-and `curation_proposals.csv` when stage evidence is available. The refreshed best
-run wrote 1,178 marker rows, 62 reference rows, 4 timecourse rows, and 2
-quarantine/curation proposal rows grouped by `development_stage_harmonized`.
+and `curation_proposals.csv` when stage evidence is available.
 
 ## Classifier Reports
 
@@ -76,10 +74,10 @@ not quarantined, `training_eligible == true`, sufficiently labeled, and
 license-compatible. Splits are group-aware to avoid leakage across dataset,
 donor, cell line, clone, sample, or batch where those identifiers are available.
 
-The refreshed best classifier manifest contains 208,651 eligible cells across 5
-labels, with non-empty train, validation, and test split files. Failed,
-quarantined, weak-label, unknown-label, and license-incompatible data are
-excluded unless an explicit opt-in flag is used.
+The promoted `iter_014` classifier manifest contains 418,420 eligible cells
+across 11 labels, with non-empty train, validation, and test split files.
+Failed, quarantined, weak-label, unknown-label, and license-incompatible data
+are excluded unless an explicit opt-in flag is used.
 
 ## Iteration Reports
 
