@@ -58,6 +58,14 @@ primitive-endoderm, mesoderm, and endoderm evidence when relevant. Donor-age
 labels such as adult or fetal are reported as metadata and are not forced through
 embryo or pluripotency marker expectations.
 
+Petropoulos/Lanner-style metadata is handled as per-cell source evidence. Labels
+such as `Zyg`, `2C`, `8C`, `Morula`, `ICM`, `Epi`, `Hyp`, `TE`, `PS`, and
+`PriS_like` remain in raw/source annotation columns and are also used to derive
+auditable `development_stage` and `development_stage_harmonized` values.
+Lineage labels such as epiblast, hypoblast, and trophectoderm stay available as
+cell-identity evidence while supporting the broader blastocyst or gastrulation
+stage audit axis.
+
 ## Gene Symbols And Species
 
 Human symbols and Ensembl IDs are validated against shared canonical gene
@@ -95,11 +103,11 @@ stress-dominant identity, reversed timecourses, or high-confidence reference and
 marker disagreement.
 
 In the refreshed 2026-05-21 cached best run, all 55 supported datasets passed
-technical validation. Biological validation produced 38 PASS datasets and 17
-QUARANTINE datasets, including two development-stage grouped quarantines for
-stress-dominant `development_stage_harmonized=blastocyst` evidence. Quarantined
-datasets and groups remain auditable but are excluded from classifier artifacts
-by default.
+technical validation. After Petropoulos/Lanner stage-label preservation,
+biological validation produced 37 PASS datasets and 18 QUARANTINE datasets,
+including development-stage grouped quarantine evidence. Quarantined datasets
+and groups remain auditable but are excluded from classifier artifacts by
+default.
 
 ## Curation Learning
 
