@@ -20,7 +20,9 @@ ipsc-corpus build-registry
 ```
 
 This rebuilds registry CSVs and the public source-link audit from durable
-registry/link files. It should be run before a full corpus build.
+registry/link files. It also refreshes the development-stage audit, including
+`development_stage`, `development_stage_ontology_term_id`, and
+`development_stage_harmonized`. It should be run before a full corpus build.
 
 ## Build The Public Corpus
 

@@ -20,11 +20,29 @@ Raw source annotations are preserved. Standardized columns are derived from
 parsers, registry metadata, shared vocabularies, and versioned curation rules.
 Important columns include `dataset_id`, `source_accession`, `source_annotation`,
 `cell_type_coarse`, `cell_type_fine`, `qc_label`,
+`development_stage`, `development_stage_ontology_term_id`,
+`development_stage_harmonized`,
 `reprogramming_stage_harmonized`, `biological_validation_status`,
 `technical_validation_status`, `training_eligible`, and `split_group_id`.
 
 Unknown values are allowed when they are true unknowns, but unknown rates are
 reported and weak labels are excluded from classifier training by default.
+
+## Development Stage Harmonization
+
+Development stage is tracked separately from in-vitro differentiation or
+reprogramming state. Parsers preserve raw source stage text in
+`development_stage`, preserve ontology IDs in
+`development_stage_ontology_term_id` when supplied, and derive
+`development_stage_harmonized` from versioned code and vocabulary.
+
+The harmonized vocabulary includes embryo stages such as
+`preimplantation_embryo`, `cleavage`, `morula`, `blastocyst`, `gastrulation`,
+and `postimplantation_embryo`, plus `fetal`, `neonatal`, `pediatric`, `adult`,
+`aged_adult`, `organoid_or_in_vitro_stage`, and `in_vitro_pluripotent`.
+`ipsc-corpus audit-development-stage` validates the registry-wide mapping and
+uses publication or PubMed hints only when title evidence matches the registry
+record.
 
 ## Gene Symbols And Species
 

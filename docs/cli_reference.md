@@ -7,6 +7,7 @@ The command name is `ipsc-corpus`.
 ```text
 parse-petropoulos            Parse Petropoulos/Lanner download HTML.
 build-registry               Build registry, license audit, summaries, and attribution docs.
+audit-development-stage      Audit development-stage harmonization across registry rows.
 preview-metadata             Build metadata-only H5AD preview from metadata tables.
 harmonize                    Legacy download/preprocess/harmonize command.
 download-preprocess          Download, preprocess, harmonize, validate, and write reports.
@@ -37,6 +38,20 @@ ipsc-corpus build-registry
 
 Rebuilds generated registry files from durable source files. Do not hand-edit
 generated CSVs; update durable registry inputs or source-link overrides instead.
+The build also refreshes the development-stage harmonization audit.
+
+## `audit-development-stage`
+
+```bash
+ipsc-corpus audit-development-stage
+```
+
+Audits every registry row for `development_stage`,
+`development_stage_ontology_term_id`, and `development_stage_harmonized`.
+It checks durable registry metadata, title or PubMed stage hints where available,
+and the allowed development-stage vocabulary. Unmapped raw stage strings are
+failures; missing registry-level stages and PMID/title mismatches are review
+warnings.
 
 ## `download-preprocess`
 
