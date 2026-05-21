@@ -36,6 +36,7 @@ validation pass rates, and zero open high-severity failures.
 
 getting_started
 cli_reference
+single_cell_best_practices
 validation_and_curation
 outputs_and_reports
 troubleshooting

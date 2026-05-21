@@ -109,3 +109,20 @@ ipsc-corpus promote-best --run-dir /data/ipsc_corpus/runs/iter_014
 ```
 
 Use these to inspect completed runs without redownloading data.
+
+## `train-logstruct`
+
+```bash
+ipsc-corpus train-logstruct \
+  --input-mode auto \
+  --preprocess-profile sc_best_practices \
+  --hvg-strategy auto \
+  --normalize auto \
+  --require-counts
+```
+
+This command stress-tests classifier-ready outputs. It supports combined or
+per-dataset H5AD input, union or intersection gene alignment, global or
+per-dataset HVG selection, explicit normalization controls, group-aware splits,
+repeated runs, CUDA device assignment, and dry-run preprocessing checks. See
+{doc}`single_cell_best_practices` for the mode matrix.
