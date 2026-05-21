@@ -8,8 +8,6 @@ The command name is `ipsc-corpus`.
 parse-petropoulos            Parse Petropoulos/Lanner download HTML.
 build-registry               Build registry, license audit, summaries, and attribution docs.
 audit-development-stage      Audit development-stage harmonization across registry rows.
-preview-metadata             Build metadata-only H5AD preview from metadata tables.
-harmonize                    Legacy download/preprocess/harmonize command.
 download-preprocess          Download, preprocess, harmonize, validate, and write reports.
 iterate                      Run the self-improving corpus factory loop.
 score-iteration              Score a completed iteration directory.
@@ -20,6 +18,10 @@ train-logstruct              Stress-test LogStruct on classifier labels and expr
 doctor                       Check runtime dependencies and registry readability.
 paths                        Print resolved project/script paths.
 ```
+
+`download-preprocess` is the supported public download and harmonization
+entrypoint. The old `harmonize` and `preview-metadata` commands are preserved
+only on the kit repository's `legacy` branch.
 
 ## `doctor`
 
