@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this documentation or iPSC Corpus Kit, please cite it using the metadata from this file."
+type: software
+title: "iPSC Corpus Kit Documentation"
+authors:
+  - family-names: "Raj"
+    given-names: "Yash"
+abstract: "Documentation for a reproducible, public iPSC/reprogramming single-cell corpus registry, harmonization, validation, and classifier-artifact pipeline."
+repository-code: "https://github.com/yashraj59/ipsc-corpus-docs"
+url: "https://github.com/yashraj59/ipsc-corpus-kit"
+version: "0.3.0"
+date-released: "2026-05-21"
+license: "MIT"

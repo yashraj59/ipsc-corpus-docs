@@ -1,6 +1,6 @@
 project = "iPSC Corpus Kit"
-author = "iPSC Corpus Kit contributors"
-copyright = "2026, iPSC Corpus Kit contributors"
+author = "Yash Raj"
+copyright = "2026, Yash Raj"
 
 extensions = [
     "myst_parser",

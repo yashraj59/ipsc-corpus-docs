@@ -40,6 +40,7 @@ cli_reference
 single_cell_best_practices
 validation_and_curation
 outputs_and_reports
+citation_and_license
 troubleshooting
 ```
 
