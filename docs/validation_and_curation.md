@@ -44,6 +44,20 @@ and `postimplantation_embryo`, plus `fetal`, `neonatal`, `pediatric`, `adult`,
 uses publication or PubMed hints only when title evidence matches the registry
 record.
 
+Expression-based validation also treats `development_stage_harmonized` as a
+first-class biology axis. Marker summaries, reference projection, clustering
+validation, timecourse checks, quarantine rows, and curation proposals all group
+by development stage when the column is present. Raw `development_stage` and
+`development_stage_ontology_term_id` are preserved and are never overwritten.
+
+The stage rules are conservative. In-vitro pluripotent stages are checked for
+pluripotency/epiblast evidence and anti-fibroblast contradictions. Embryo/model
+stages such as morula, blastocyst, gastrulation, postimplantation embryo, and
+`embryo_like_model` are checked against epiblast/pluripotency, trophoblast,
+primitive-endoderm, mesoderm, and endoderm evidence when relevant. Donor-age
+labels such as adult or fetal are reported as metadata and are not forced through
+embryo or pluripotency marker expectations.
+
 ## Gene Symbols And Species
 
 Human symbols and Ensembl IDs are validated against shared canonical gene
@@ -79,6 +93,13 @@ Common quarantine reasons include clean iPSC labels with fibroblast-dominant
 profiles, weak unknown-heavy annotation, unsupported embryo-like labels,
 stress-dominant identity, reversed timecourses, or high-confidence reference and
 marker disagreement.
+
+In the refreshed 2026-05-21 cached best run, all 55 supported datasets passed
+technical validation. Biological validation produced 38 PASS datasets and 17
+QUARANTINE datasets, including two development-stage grouped quarantines for
+stress-dominant `development_stage_harmonized=blastocyst` evidence. Quarantined
+datasets and groups remain auditable but are excluded from classifier artifacts
+by default.
 
 ## Curation Learning
 

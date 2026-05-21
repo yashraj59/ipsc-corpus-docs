@@ -25,10 +25,11 @@ classifier-ready artifacts from reproducible evidence.
 
 ## Current Public Corpus
 
-The promoted public run (`iter_014`, 2026-05-20) produced 55 supported public
-datasets, 19 audited skipped rows, 6,191,582 harmonized cells, 418,420
-classifier-eligible cells, 11 classifier labels, 100% technical/obs/var
-validation pass rates, and zero open high-severity failures.
+The refreshed cached best run (2026-05-21) produced 55 supported public
+datasets, 19 audited skipped rows, 6,191,582 harmonized cells, 55/55 technical
+PASS datasets, 38 biological PASS datasets, 17 biological QUARANTINE datasets,
+208,651 classifier-eligible cells, 5 classifier labels, and zero open
+high-severity failures.
 
 ```{toctree}
 :maxdepth: 2

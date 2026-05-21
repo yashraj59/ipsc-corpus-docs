@@ -18,6 +18,9 @@ The development loop used specialized responsibilities:
 - Parser agents implemented supported public layouts.
 - Validation agents converted repeated failures into hard tests.
 - Biology agents added marker, reference, clustering, timecourse, and quarantine evidence.
+- Development-stage validation was promoted from registry metadata audit to
+  expression-based evidence across marker, reference, clustering, timecourse, and
+  curation reports.
 - Curation agents learned durable annotation rules while preserving raw labels.
 - Classifier agents enforced eligibility and split-leakage gates.
 - Reviewer agents compared scorecards and rejected regressions.
@@ -36,6 +39,11 @@ The loop should not redownload data every iteration. Downloads are cached under
 `<out-dir>/downloads`, verified with file size and SHA-256 sidecars, and reused
 with `--resume`. Iterations re-run harmonization and validation against cached
 assets unless `--force` is explicit.
+
+When downloaded and harmonized data already exists, use `download-preprocess
+--validate-only --out-dir <existing-run>` to refresh standardized obs columns and
+validation reports in place. This avoids redownloading assets and avoids copying
+multi-terabyte H5AD corpora.
 
 ## Why This Matters
 
